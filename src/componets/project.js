@@ -3,7 +3,7 @@ import React from 'react'
 export default function Project({ project }) {
     return (
         <div
-            className='flex flex-col animate-[topToBottomSlide_1.5s_forwards] w-[18rem] h-[25rem] text-white bg-gray rounded-lg  border'
+            className='flex flex-col animate-[topToBottomSlide_1.5s_forwards] w-[18rem] h-[30rem] text-white bg-gray rounded-lg  border p-1'
         >
             <img src={project.image} className='w-full  h-[10rem] rounded-lg bg-white ' />
             <div className='p-5 flex flex-col gap-3 border-t'>
@@ -19,6 +19,8 @@ export default function Project({ project }) {
                     })
                 }
             </div>
+
+            <a  className="pt-3"href={project.projectLink}> Link= {project.projectLink}</a>
         </div>
     )
 }
