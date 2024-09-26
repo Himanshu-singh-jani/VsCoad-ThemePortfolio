@@ -47,7 +47,7 @@ let PROJECTS = [
         description: "Implemented features such as transactions between different users",
         image: "Project5.png",
         skills: ["React", "Tailwind Css",],
-        projectLink:"https://banking-app-kohl.vercel.app/Basic-banking-app"
+        projectLink:"https://basic-banking-app-gamma.vercel.app/"
         
     },
     {
