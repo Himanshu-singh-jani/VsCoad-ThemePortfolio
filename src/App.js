@@ -54,11 +54,7 @@ function App() {
         }
     })
 
-    const handleKeyPress = useCallback((event) => {
-        if (event.key === 's') {
-            setSearchBar(!searchBar)
-        }
-    })
+
 
     const handleMouseDown = useCallback((e) => {
         if (e.target.className.length > 0 && (e?.target?.className?.includes('searchResult'))) {
@@ -70,7 +66,7 @@ function App() {
     })
 
     useEffect(() => {
-        document.addEventListener("keypress", handleKeyPress);
+       
         document.onmousedown = handleMouseDown;
         document.addEventListener('visibilitychange', handleVisibilityChange);
     }, []);
